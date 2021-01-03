@@ -1,0 +1,78 @@
+/* color palette from coolors */
+
+:root {
+	--darkest-color: #5e6472ff;
+	--lightest-color: white;
+	--highlight-color: #b8f2e6ff;
+	--bright-color-1: #ffa69eff;
+	--bright-color-2: #ffa69eff;
+	--bright-color-3: #ffa69eff;
+	--bright-color-4: #ffa69eff;
+	/* CSS HEX */
+	--black-coral: #5e6472ff;
+	--melon: #ffa69eff;
+	--floral-white: #fcf9edff;
+	--aero-blue: #b8f2e6ff;
+	--powder-blue: #aed9e0ff;
+}
+
+body {
+	background: var(--darkest-color);
+	color: var(--lightest-color);
+	font-family: 'Hind Siliguri', sans-serif;
+}
+
+.container {
+	width: 90%;
+	max-width: 1000px;
+	margin: 50px auto;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.circle-shape {
+	border: 3px solid var(--lightest-color);
+	margin: auto;
+	position: relative;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.profile-pic {
+	width: 100%;
+	height: auto;
+	margin-top: -45px;
+}
+
+a {
+	color: #b8f2e6ff;
+	text-decoration: none;
+}
+
+.ig-link {
+	margin: 10px 0;
+	font-weight: bold;
+}
+
+.link-list-item {
+	border: 2px solid white;
+	box-sizing: border-box;
+	margin: 20px auto;
+	background-color: #ffa69eff;
+	color: white;
+	padding: 15px;
+	text-align: center;
+	transition: all 0.15s;
+	border-radius: 2px;
+}
+
+.highlighted,
+.link-list-item:hover,
+a:hover {
+	color: #b8f2e6ff;
+	border-color: var(--highlight-color);
+	text-shadow: 0 0 2em var(--highlight-color);
+}
